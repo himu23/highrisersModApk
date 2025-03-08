@@ -1,0 +1,87 @@
+himu23@ideapad3:~$ adb devices
+List of devices attached
+adb-RZCW40X699B-xBlMis._adb-tls-connect._tcp	device
+
+himu23@ideapad3:~$ adb shell pm list packages | grep high risers
+grep: risers: No such file or directory
+
+Exception occurred while executing 'list':
+java.lang.SecurityException: Shell does not have permission to access user 150
+ com.android.server.am.ActivityManagerService.handleIncomingUser:15970 android.app.ActivityManager.handleIncomingUser:5152 com.android.server.pm.PackageManagerShellCommand.translateUserId:3753 
+	at com.android.server.am.UserController.handleIncomingUser(UserController.java:2892)
+	at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:15970)
+	at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:5152)
+	at com.android.server.pm.PackageManagerShellCommand.translateUserId(PackageManagerShellCommand.java:3753)
+	at com.android.server.pm.PackageManagerShellCommand.runListPackages(PackageManagerShellCommand.java:1074)
+	at com.android.server.pm.PackageManagerShellCommand.runListPackages(PackageManagerShellCommand.java:960)
+	at com.android.server.pm.PackageManagerShellCommand.runList(PackageManagerShellCommand.java:800)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:237)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:7152)
+	at android.os.Binder.shellCommand(Binder.java:1104)
+	at android.os.Binder.onTransact(Binder.java:914)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4905)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:7136)
+	at android.os.Binder.execTransactInternal(Binder.java:1380)
+	at android.os.Binder.execTransact(Binder.java:1311)
+himu23@ideapad3:~$ adb shell pm list packages | grep high
+
+Exception occurred while executing 'list':
+java.lang.SecurityException: Shell does not have permission to access user 150
+ com.android.server.am.ActivityManagerService.handleIncomingUser:15970 android.app.ActivityManager.handleIncomingUser:5152 com.android.server.pm.PackageManagerShellCommand.translateUserId:3753 
+	at com.android.server.am.UserController.handleIncomingUser(UserController.java:2892)
+	at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:15970)
+	at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:5152)
+	at com.android.server.pm.PackageManagerShellCommand.translateUserId(PackageManagerShellCommand.java:3753)
+	at com.android.server.pm.PackageManagerShellCommand.runListPackages(PackageManagerShellCommand.java:1074)
+	at com.android.server.pm.PackageManagerShellCommand.runListPackages(PackageManagerShellCommand.java:960)
+	at com.android.server.pm.PackageManagerShellCommand.runList(PackageManagerShellCommand.java:800)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:237)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:7152)
+	at android.os.Binder.shellCommand(Binder.java:1104)
+	at android.os.Binder.onTransact(Binder.java:914)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4905)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:7136)
+	at android.os.Binder.execTransactInternal(Binder.java:1380)
+	at android.os.Binder.execTransact(Binder.java:1311)
+himu23@ideapad3:~$ adb shell pm list packages | grep whatsapp
+
+Exception occurred while executing 'list':
+java.lang.SecurityException: Shell does not have permission to access user 150
+ com.android.server.am.ActivityManagerService.handleIncomingUser:15970 android.app.ActivityManager.handleIncomingUser:5152 com.android.server.pm.PackageManagerShellCommand.translateUserId:3753 
+	at com.android.server.am.UserController.handleIncomingUser(UserController.java:2892)
+	at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:15970)
+	at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:5152)
+	at com.android.server.pm.PackageManagerShellCommand.translateUserId(PackageManagerShellCommand.java:3753)
+	at com.android.server.pm.PackageManagerShellCommand.runListPackages(PackageManagerShellCommand.java:1074)
+	at com.android.server.pm.PackageManagerShellCommand.runListPackages(PackageManagerShellCommand.java:960)
+	at com.android.server.pm.PackageManagerShellCommand.runList(PackageManagerShellCommand.java:800)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:237)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:7152)
+	at android.os.Binder.shellCommand(Binder.java:1104)
+	at android.os.Binder.onTransact(Binder.java:914)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4905)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:7136)
+	at android.os.Binder.execTransactInternal(Binder.java:1380)
+	at android.os.Binder.execTransact(Binder.java:1311)
+himu23@ideapad3:~$ adb root
+adbd cannot run as root in production builds
+himu23@ideapad3:~$ adb root
+adbd cannot run as root in production builds
+himu23@ideapad3:~$ adb shell pm list packages --user 0 | grep whatsapp
+package:com.marsvard.stickermakerforwhatsapp
+package:com.whatsapp
+himu23@ideapad3:~$ adb shell pm list packages --user 0 | grep high risers
+grep: risers: No such file or directory
+himu23@ideapad3:~$ adb shell pm list packages --user 0 | grep high
+package:com.kumobius.android.highrisers
+himu23@ideapad3:~$ adb shell pm path com.kumobius.android.highrisers
+package:/data/app/~~ZTwM3Yda25HKdoqonXoaAg==/com.kumobius.android.highrisers-bMvkSXPgFZ7L5BZ6uFTHDA==/base.apk
+himu23@ideapad3:~$ adb pull /data/app/~~ZTwM3Yda25HKdoqonXoaAg==/com.kumobius.android.highrisers-bMvkSXPgFZ7L5BZ6uFTHDA==/base.apk
+/data/app/~~ZTwM3Yda25HKdoqonXoaAg==/c.... 2.3 MB/s (61862680 bytes in 26.144s)
+himu23@ideapad3:~$ 
