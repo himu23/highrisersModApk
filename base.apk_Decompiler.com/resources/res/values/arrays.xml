@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="al_exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/al_exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="al_exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </array>
+    <array name="androidAchievementMappingKeys">
+        <item>SCChoose</item>
+        <item>SCCoins</item>
+        <item>SCCredits</item>
+        <item>SCDownunder</item>
+        <item>SCHorizontal</item>
+        <item>SCMilestone1</item>
+        <item>SCMilestone2</item>
+        <item>SCMilestone3</item>
+        <item>SCSpace</item>
+        <item>SCVertical</item>
+    </array>
+    <array name="androidAchievementMappingValues">
+        <item>CgkI9N2pwukcEAIQAg</item>
+        <item>CgkI9N2pwukcEAIQAw</item>
+        <item>CgkI9N2pwukcEAIQBA</item>
+        <item>CgkI9N2pwukcEAIQBQ</item>
+        <item>CgkI9N2pwukcEAIQBg</item>
+        <item>CgkI9N2pwukcEAIQBw</item>
+        <item>CgkI9N2pwukcEAIQCA</item>
+        <item>CgkI9N2pwukcEAIQCQ</item>
+        <item>CgkI9N2pwukcEAIQCg</item>
+        <item>CgkI9N2pwukcEAIQCw</item>
+    </array>
+    <array name="androidLeaderboardMappingKeys">
+        <item>SCPlayerScore</item>
+    </array>
+    <array name="androidLeaderboardMappingValues">
+        <item>CgkI9N2pwukcEAIQDA</item>
+    </array>
+</resources>

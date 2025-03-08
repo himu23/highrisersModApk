@@ -1,0 +1,12 @@
+package com.applovin.exoplayer2;
+
+import android.os.Bundle;
+import com.applovin.exoplayer2.ba;
+import com.applovin.exoplayer2.g;
+
+/* compiled from: D8$$SyntheticClass */
+public final /* synthetic */ class ba$a$$ExternalSyntheticLambda0 implements g.a {
+    public final g fromBundle(Bundle bundle) {
+        return ba.a.r(bundle);
+    }
+}

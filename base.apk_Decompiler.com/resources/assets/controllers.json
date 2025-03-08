@@ -1,0 +1,12 @@
+{
+   "SupportedControllers" : {
+      "Gamepad" : {},
+      "Remote" : "true",
+      "SecondScreen" : {
+          "DPad" : "true",
+          "AnalogSticks" : "0",
+          "DigitalButtons" : "3",
+          "Mouse" : "true"
+      }
+   }
+}
