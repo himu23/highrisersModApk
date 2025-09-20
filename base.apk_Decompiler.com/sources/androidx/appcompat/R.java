@@ -1538,7 +1538,7 @@ public final class R {
         public static final int Toolbar_titleMargins = 27;
         public static final int Toolbar_titleTextAppearance = 28;
         public static final int Toolbar_titleTextColor = 29;
-        public static final int[] View = {16842752, 16842970, com.kumobius.android.highrisers.R.attr.paddingEnd, com.kumobius.android.highrisers.R.attr.paddingStart, com.kumobius.android.highrisers.R.attr.theme};
+        public static final int[] View = {16842752, 16842970, com.kumobius.android.highrisers.R.attr.paddingEnd, com.kumobius.android.highrisers.R.attr.padding, com.kumobius.android.highrisers.R.attr.theme};
         public static final int[] ViewBackgroundHelper = {16842964, com.kumobius.android.highrisers.R.attr.backgroundTint, com.kumobius.android.highrisers.R.attr.backgroundTintMode};
         public static final int ViewBackgroundHelper_android_background = 0;
         public static final int ViewBackgroundHelper_backgroundTint = 1;
